@@ -1,0 +1,43 @@
+* {
+    font-family: 'Cabin', sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-variant: normal;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+h1 {
+    font-size: 5em;
+    font-weight: 600;
+    line-height: 26.4px;
+}
+
+a {
+    text-decoration: none;
+    color: royalblue;
+}
+
+footer {
+    height: 5vh;
+    text-align: center;
+    padding: 7px;
+    background-color: #A4CEFF
+}
+
+#innerHero{
+    background-image: url(media/logo-hiro-hibachi.jpg);
+    background-size:cover;
+    height: 200px;
+}
