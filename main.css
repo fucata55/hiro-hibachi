@@ -28,6 +28,7 @@ h2 {
     line-height: 1.4em;
     margin-bottom: 0.2em;
 }
+
 p {
     line-height: 1.27em;
     margin-bottom: 0.2em;
@@ -45,6 +46,7 @@ button {
     border: 3px solid;
     font-weight: bold;
 }
+
 a {
     text-decoration: none;
     color: royalblue;
@@ -71,8 +73,10 @@ section>div {
 }
 
 table {
+    display: inline;
     margin-bottom: 10px
 }
+
 td:first-child {
     text-align: left;
 }
@@ -92,16 +96,42 @@ th {
 #menuSection {
     grid-template: 1.5em 1fr 1.5em / repeat(12, 1fr)
 }
+
 #menuSection>.main-content {
     grid-area: 2 / 2 / 2 / 12;
 }
 
-#innerHero {
-    grid-area: 5 / 2 / 9 / 10;
-}
+
 
 #heroContainer {
     background-image: url(media/logo-hiro-hibachi.jpg);
-    background-size:cover;
+    background-size: cover;
+    background-position-y: 35%;
     height: 200px;
+    display: grid;
+    grid-area: 1 / 1 / 10 / 11;
+    grid-template: 40% 1fr 40% / 1fr;
+}
+
+#innerHero {
+    grid-row-start: 2;
+}
+
+#hiroSpecialRoll {
+    max-width: 300px;
+}
+
+@media only screen and (min-width: 1140px) {
+    * {
+        font-size: 18px;
+    }
+    #heroSection {
+        display: block;
+        background-color: #B81F21;
+    }
+    #heroContainer {
+        width: 900px;
+        height: 50vh;
+        margin: 0 auto 0 auto;
+    }
 }
