@@ -36,3 +36,11 @@ $('#aboutNav').click(function () {
         scrollTop: $('#aboutSection').offset().top
     }, 'slow');
 })
+
+$('#viewMenu').click(function () {
+    $('html,body').animate({
+        scrollTop: $('#menuSection').offset().top
+    }, 'slow');
+})
+
+$('#googleMapButton').click(() => window.open('https://goo.gl/maps/finaZD4ij8r'))

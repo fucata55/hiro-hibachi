@@ -11,10 +11,9 @@
 <body>
     <header role='banner'>
         <nav class="topnav" id="myTopnav" role='navigation'>
-            <a id='aboutNav' class="active">About</a>
+            <a id='aboutNav' class="active">Hiro Hibachi</a>
             <a id='findUsNav'>Find Us</a>
             <a id='cateringNav'>Catering</a>
-            <a id='reviewsNav'>Reviews</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
     </header>
@@ -23,7 +22,7 @@
             <div id='heroContainer'>
                 <div id='innerHero'>
                     <h1>Hiro Hibachi</h1>
-                    <button>View Menu</button>
+                    <button id='viewMenu'>View Menu</button>
                 </div>
             </div>
         </section>
@@ -37,7 +36,7 @@
                 <h3>Location</h3>
                 <p>109 Highway 12 West</p>
                 <p>Kosciusko, MS 39090</p>
-                <button>Navigate via Google Map</button>
+                <button id='googleMapButton'>Google Direction</button>
             </div>
         </section>
         <section id='aboutSection' role='region'>
@@ -52,11 +51,6 @@
                     <li>Credit Cards Accepted</li>
                     <li>No Checks Accepted</li>
                 </ul>
-            </div>
-        </section>
-        <section id="reviewsSection">
-            <div class="main-content">
-                <h2>Reviews</h2>
             </div>
         </section>
         <section id="menuSection" role='region'>
@@ -166,6 +160,10 @@
         <section id='findUsSection' role='region'>
             <div class="main-content">
                 <h2>Find Us</h2>
+                <iframe class='google-map-container'
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyDofyDbpjYUoCcTX9524wb1JAZ_NRNNgck
+                             &q=place_id:ChIJ5QO_CncngogRmLRHPkcDeTA" allowfullscreen>
+                </iframe>
             </div>
         </section>
         <section id='cateringSection' role='region'>
@@ -179,7 +177,9 @@
     <script src='app.js'></script>
 </body>
 <footer role='contentinfo'>
-    <p>Built by <a href="http://sliong.com" target=”_blank”>Stephen</a></p>
+    <div>
+        <p>Built by <a href="http://sliong.com" target=”_blank”>Stephen</a></p>
+    </div>
 </footer>
 
 </html>
