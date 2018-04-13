@@ -22,6 +22,7 @@ h1 {
     font-size: 3em;
     font-weight: 600;
     line-height: 1.1em;
+    color: #EBD44D;
 }
 
 h2 {
@@ -118,12 +119,12 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #B81F21;
+    color: white;
 }
 
 .active {
-    background-color: #4CAF50;
+    background-color: #B81F21;
     color: white;
 }
 
