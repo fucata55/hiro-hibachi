@@ -1,170 +1,185 @@
 <!DOCTYPE HTML>
 <html lang='en'>
-    <head>
-        <title>Hiro Hibachi</title>
-        <link rel="shortcut icon" type="image/jpg" href="./media/favicon-hiro-hibachi.jpg"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <header role='banner'>
-        <nav role='navigation'>
-            <ul>
-                <li>Find Us</li>
-                <li>Menu</li>
-                <li>About</li>
-                <li>Review</li>
-            </ul>
+
+<head>
+    <title>Hiro Hibachi</title>
+    <link rel="shortcut icon" type="image/jpg" href="./media/favicon-hiro-hibachi.jpg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <header role='banner'>
+        <nav class="topnav" id="myTopnav" role='navigation'>
+            <a id='aboutNav' class="active">About</a>
+            <a id='findUsNav'>Find Us</a>
+            <a id='cateringNav'>Catering</a>
+            <a id='reviewsNav'>Reviews</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
-        </header>
-        <main role='main'>
-            <section id='heroSection' role='region'>
-               <div id='heroContainer'>
-                    <div id='innerHero'>
-    <!--                   must use H1 hiro hibachi for SEO-->
-                        <h1>Hiro Hibachi</h1>
-                        <button>View Menu</button>
-                    </div>
+    </header>
+    <main role='main'>
+        <section id='heroSection' role='region'>
+            <div id='heroContainer'>
+                <div id='innerHero'>
+                    <h1>Hiro Hibachi</h1>
+                    <button>View Menu</button>
                 </div>
-            </section>
-            <section>
-                <div class="main-content">
-                   <h2>Phone</h2>
-                    <p>(662) 528-6345</p>
-                    <h2>Location</h2>
-                    <button>Navigate via Google Map</button>
-                    <p>109 Highway 12 West</p>
-                    <p>Kosciusko, MS 39090</p>
-                    <h2>Hours</h2>
-                    <p>Open Monday - Saturday</p>
-                    <p>11 a.m. - 7:30 p.m</p>
-                </div>
-            </section>
-            <section>
-                <div class="main-content">
-                    <ul>
-                        <li>Carry Out Only</li>
-                        <li>Local Business</li>
-                        <li>Kids Friendly</li>
-                        <li>Credit Cards Accepted</li>
-                        <li>No Checks Accepted</li>
-                    </ul>
-                </div>
-            </section>
-            <section id="menuSection">
-                <div class="main-content">
-                    <h2>Menu</h2>
-                    <p>All entrées served with <br> fried rice (rice, eggs, onion), <br>Hibachi vegetables <br>(zucchini, carrot, onion, broccoli), & <br>yum-yum sauce on the side.</p>
-                    <p>Our steak is NY strip, hand-cut on premises & grilled to your specification</p>
-                    <table>
-                        <tr>
-                           <th colspan='2'>Entrées</th>
+            </div>
+        </section>
+        <section role='region'>
+            <div class="main-content">
+                <h3>Phone</h3>
+                <p>(662) 528-6345</p>
+                <h3>Hours</h3>
+                <p>Open Monday - Saturday</p>
+                <p>11 a.m. - 7:30 p.m</p>
+                <h3>Location</h3>
+                <p>109 Highway 12 West</p>
+                <p>Kosciusko, MS 39090</p>
+                <button>Navigate via Google Map</button>
+            </div>
+        </section>
+        <section id='aboutSection' role='region'>
+            <div class="main-content">
+                <ul>
+                    <li>Japanese Cuisine</li>
+                    <li>Food Truck</li>
+                    <li>Carry Out Only</li>
+                    <li>Local Business</li>
+                    <li>Kids Friendly</li>
+                    <li>Accept Catering</li>
+                    <li>Credit Cards Accepted</li>
+                    <li>No Checks Accepted</li>
+                </ul>
+            </div>
+        </section>
+        <section id="reviewsSection">
+            <div class="main-content">
+                <h2>Reviews</h2>
+            </div>
+        </section>
+        <section id="menuSection" role='region'>
+            <div class="main-content">
+                <h2>Menu</h2>
+                <p>All entrées served with <br> fried rice (rice, eggs, onion), <br>Hibachi vegetables <br>(zucchini, carrot, onion, broccoli), & <br>yum-yum sauce on the side.</p>
+                <p>Our steak is NY strip, hand-cut on premises & grilled to your specification</p>
+                <table>
+                    <tr>
+                        <th colspan='2'>Entrées</th>
                         <td></td>
-                        </tr>
-                        <tr>
-                            <td>Hibachi Chicken</td>
-                            <td>$7.95</td>
-                        </tr>
-                        <tr>
-                            <td>Hibachi Steak</td>
-                            <td>$9.95</td>
-                        </tr>
-                        <tr>
-                            <td>Hibachi Shrimp</td>
-                            <td>$9.95</td>
-                        </tr>
-                        <tr>
-                            <td>Hibachi Vegetables</td>
-                            <td>$6.95</td>
-                        </tr>
-                        <tr>
-                            <th colspan='2'>Combination</th>
-                        </tr>
-                        <tr>
-                            <td>Hibachi Chicken & Steak</td>
-                            <td>$12.95</td>
-                        </tr>
-                        <tr>
-                            <td>Hibachi Chicken & Shrimp</td>
-                            <td>$12.95</td>
-                        </tr>
-                        <tr>
-                            <td>Hibachi Steak & Shrimp</td>
-                            <td>$12.95</td>
-                        </tr>
-                        <tr>
-                            <td>Super Hiro (Steak, Chicken, & Shrimp)</td>
-                            <td>$15.95</td>
-                        </tr>
-                        <tr>
-                            <th colspan='2'>Sides</th>
-                        </tr>
-                        <tr>
-                            <td>Fried Rice</td>
-                            <td>$2.95</td>
-                        </tr>
-                        <tr>
-                            <td>Vegetables</td>
-                            <td>$3.95</td>
-                        </tr>
-                        <tr>
-                            <td>Chicken</td>
-                            <td>$5.95</td>
-                        </tr>
-                        <tr>
-                            <td>Shrimp</td>
-                            <td>$6.95</td>
-                        </tr>
-                        <tr>
-                            <td>Steak</td>
-                            <td>$6.95</td>
-                        </tr>
-                        <tr>
-                            <td>Yum-yum sauce</td>
-                            <td>$0.75</td>
-                        </tr>
-                        <tr>
-                            <th colspan='2'>Roll</th>
-                        </tr>
-                        <tr>
-                            <td id='hiroSpecialRoll'>Hiro Special Roll<br>
-                                Deep fried roll with
-                                NY steak, cream cheese, asparagus inside<br>
-                                and topped with special sauce
-                            </td>
-                            <td>$10.95</td>
-                        </tr>
-                        <tr>
-                            <th colspan='2'>Beverage</th>
-                        </tr><tr>
-                            <td>Coke</td>
-                            <td>$0.98</td>
-                        </tr>
-                        <tr>
-                            <td>Sprite</td>
-                            <td>$0.98</td>
-                        </tr>
-                        <tr>
-                            <td>Diet Coke</td>
-                            <td>$0.98</td>
-                        </tr>
-                        <tr>
-                            <td>Bottle Water</td>
-                            <td>$0.98</td>
-                        </tr>
-                    </table>
-                    <p>Consuming raw or undercooked meat may increase your risk of foodborne illness</p>
-                    <p>Price listed above are subject to change without prior notice</p>
-                </div>
-            </section>
-            <section>
-            <div class="main-content"></div>
-<!--                Map-->
-            </section>
-        </main>
-        <script src='app.js'></script>
-    </body>
-    <footer role='contentinfo'>
-        <p>Built by <a href="http://sliong.com">Stephen</a></p>
-    </footer>
+                    </tr>
+                    <tr>
+                        <td>Hibachi Chicken</td>
+                        <td>$7.95</td>
+                    </tr>
+                    <tr>
+                        <td>Hibachi Steak</td>
+                        <td>$9.95</td>
+                    </tr>
+                    <tr>
+                        <td>Hibachi Shrimp</td>
+                        <td>$9.95</td>
+                    </tr>
+                    <tr>
+                        <td>Hibachi Vegetables</td>
+                        <td>$6.95</td>
+                    </tr>
+                    <tr>
+                        <th colspan='2'>Combination</th>
+                    </tr>
+                    <tr>
+                        <td>Hibachi Chicken & Steak</td>
+                        <td>$12.95</td>
+                    </tr>
+                    <tr>
+                        <td>Hibachi Chicken & Shrimp</td>
+                        <td>$12.95</td>
+                    </tr>
+                    <tr>
+                        <td>Hibachi Steak & Shrimp</td>
+                        <td>$12.95</td>
+                    </tr>
+                    <tr>
+                        <td>Super Hiro (Steak, Chicken, & Shrimp)</td>
+                        <td>$15.95</td>
+                    </tr>
+                    <tr>
+                        <th colspan='2'>Sides</th>
+                    </tr>
+                    <tr>
+                        <td>Fried Rice</td>
+                        <td>$2.95</td>
+                    </tr>
+                    <tr>
+                        <td>Vegetables</td>
+                        <td>$3.95</td>
+                    </tr>
+                    <tr>
+                        <td>Chicken</td>
+                        <td>$5.95</td>
+                    </tr>
+                    <tr>
+                        <td>Shrimp</td>
+                        <td>$6.95</td>
+                    </tr>
+                    <tr>
+                        <td>Steak</td>
+                        <td>$6.95</td>
+                    </tr>
+                    <tr>
+                        <td>Yum-yum sauce</td>
+                        <td>$0.75</td>
+                    </tr>
+                    <tr>
+                        <th colspan='2'>Roll</th>
+                    </tr>
+                    <tr>
+                        <td id='hiroSpecialRoll'>Hiro Special Roll<br> Deep fried roll with NY steak, cream cheese, asparagus inside<br> and topped with special sauce
+                        </td>
+                        <td>$10.95</td>
+                    </tr>
+                    <tr>
+                        <th colspan='2'>Beverage</th>
+                    </tr>
+                    <tr>
+                        <td>Coke</td>
+                        <td>$0.98</td>
+                    </tr>
+                    <tr>
+                        <td>Sprite</td>
+                        <td>$0.98</td>
+                    </tr>
+                    <tr>
+                        <td>Diet Coke</td>
+                        <td>$0.98</td>
+                    </tr>
+                    <tr>
+                        <td>Bottle Water</td>
+                        <td>$0.98</td>
+                    </tr>
+                </table>
+                <p>Consuming raw or undercooked meat may increase your risk of foodborne illness</p>
+                <p>Price listed above are subject to change without prior notice</p>
+            </div>
+        </section>
+        <section id='findUsSection' role='region'>
+            <div class="main-content">
+                <h2>Find Us</h2>
+            </div>
+        </section>
+        <section id='cateringSection' role='region'>
+            <div class="main-content">
+                <h2>Catering</h2>
+                <p>For catering order, please call (662) 528-6345</p>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src='app.js'></script>
+</body>
+<footer role='contentinfo'>
+    <p>Built by <a href="http://sliong.com" target=”_blank”>Stephen</a></p>
+</footer>
+
 </html>
