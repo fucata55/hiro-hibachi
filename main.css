@@ -18,11 +18,17 @@
     -webkit-padding-end: 0px;
 }
 
+@font-face{
+    font-family: 'Gang of Three';
+    src: url('./media/gang-of-three/go3v2.ttf');
+}
+
 h1 {
     font-size: 3em;
     font-weight: 600;
     line-height: 1.1em;
-    color: #EBD44D;
+    color: black;
+    font-family: 'Gang of Three';
 }
 
 h2 {
