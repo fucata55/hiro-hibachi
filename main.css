@@ -27,7 +27,13 @@ h1 {
     font-size: 3em;
     font-weight: 600;
     line-height: 1.1em;
-    color: black;
+    color: #E0D73C;
+/*    Text stroke simulation Credit Chris Coyier https://css-tricks.com/adding-stroke-to-web-text/*/
+    text-shadow:
+        -3px -3px 0 #B81F21,
+        3px -3px 0 #B81F21,
+        -3px 3px 0 #B81F21,
+        3px 3px 0  #B81F21;
     font-family: 'Gang of Three';
 }
 
@@ -50,13 +56,77 @@ div li {
     line-height: 1.27em;
 }
 
-button {
-    margin: 0.5em;
-    width: 10em;
+/*hvr button Credit IanLunn Hover.css*/
+
+[class^="hvr-"] {
+    margin: .4em;
     padding: 0.5em;
+    cursor: pointer;
+    background: #55C8E8;
+    text-decoration: none;
+    color: #fff;
     border-radius: 5px;
-    border: 3px solid;
-    font-weight: bold;
+    /* Prevent highlight colour when element is tapped */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    /* Smooth fonts */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+@keyframes hvr-icon-down {
+    0%,
+    50%,
+    100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    25%,
+    75% {
+        -webkit-transform: translateY(6px);
+        transform: translateY(6px);
+    }
+}
+.hvr-icon-down {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+}
+.hvr-icon-down .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.hvr-icon-down:hover .hvr-icon, .hvr-icon-down:focus .hvr-icon, .hvr-icon-down:active .hvr-icon {
+    -webkit-animation-name: hvr-icon-down;
+    animation-name: hvr-icon-down;
+    -webkit-animation-duration: 0.75s;
+    animation-duration: 0.75s;
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+}
+
+.hvr-icon-forward {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+}
+.hvr-icon-forward .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.1s;
+    transition-duration: 0.1s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-icon-forward:hover .hvr-icon, .hvr-icon-forward:focus .hvr-icon, .hvr-icon-forward:active .hvr-icon {
+    -webkit-transform: translateX(4px);
+    transform: translateX(4px);
 }
 
 a {
@@ -108,6 +178,7 @@ th {
 /*Navigation desktop here*/
 nav {
     position: fixed;
+    z-index: 99;
     width: 100%;
     overflow: hidden;
     background-color: #333;
@@ -200,7 +271,7 @@ nav .icon {
         height: 45vh;
     }
     h1 {
-        line-height: 1.5em;
+        line-height: 2.4em;
     }
 }
 @media only screen and (min-width: 1140px) {
