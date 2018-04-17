@@ -283,9 +283,6 @@ nav .icon {
     * {
         font-size: 18px;
     }
-    #heroContainer {
-        height: 45vh;
-    }
     h1 {
         line-height: 2.4em;
     }
@@ -297,15 +294,17 @@ nav .icon {
         background: url(media/dishes.png);
         background-position-y: 0;
         }
+    #heroContainer {
+        max-width: 900px;
+        height: 45vh;
     }
 }
 @media only screen and (min-width: 1140px) {
     #heroSection {
         display: block;
-        background-color: #B81F21;
+        background-color: #B81F21
     }
     #heroContainer {
-        width: 900px;
         height: 50vh;
         margin: 0 auto 0 auto;
     }
