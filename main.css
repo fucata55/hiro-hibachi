@@ -199,6 +199,7 @@ nav a {
 nav a:hover {
     background-color: #B81F21;
     color: white;
+    cursor: pointer;
 }
 
 .active {
