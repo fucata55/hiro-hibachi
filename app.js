@@ -1,4 +1,5 @@
-function myFunction() {
+//Sandwhiching navigation bar
+let sandwhichNav = () => {
     var x = document.getElementById("myTopnav");
     if (x.className === "topnav") {
         x.className += " responsive";
@@ -7,40 +8,19 @@ function myFunction() {
     }
 }
 
-$('#aboutNav').click(function () {
-    $('html,body').animate({
-        scrollTop: $('#aboutSection').offset().top
-    }, 'slow');
-})
+//Generate trigger and function for click and scroll
+let scroller = (button, sectionId) => {
+    $(`${button}`).click(() =>
+        $('html,body').animate({
+            scrollTop: $(`${sectionId}`).offset().top
+        }, 'slow')
+    )
+}
 
-$('#findUsNav').click(function () {
-    $('html,body').animate({
-        scrollTop: $('#findUsSection').offset().top
-    }, 'slow');
-})
-
-$('#cateringNav').click(function () {
-    $('html,body').animate({
-        scrollTop: $('#cateringSection').offset().top
-    }, 'slow');
-})
-
-$('#reviewsNav').click(function () {
-    $('html,body').animate({
-        scrollTop: $('#reviewsSection').offset().top
-    }, 'slow');
-})
-
-$('#aboutNav').click(function () {
-    $('html,body').animate({
-        scrollTop: $('#aboutSection').offset().top
-    }, 'slow');
-})
-
-$('#viewMenu').click(function () {
-    $('html,body').animate({
-        scrollTop: $('#menuSection').offset().top
-    }, 'slow');
-})
+scroller('#findUsNav', '#findUsSection');
+scroller('#aboutNav', '#aboutSection');
+scroller('#cateringNav', '#cateringSection');
+scroller('#reviewsNav', '#reviewsSection');
+scroller('.viewMenu', '#menuSection');
 
 $('#googleMapButton').click(() => window.open('https://goo.gl/maps/finaZD4ij8r'))
